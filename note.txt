@@ -11,3 +11,9 @@ git log --pretty=oneline  //添加参数pretty=oneline 可以只显示版本号�
 git reset --hard HEAD^  //退回到上个版本  HEAD^^就是上上个版本  前一个版本就是 HEAD~100
 git reset --hard 1094a  //退回指定的版本 1094a为版本号前几位，不同版本不同
 git reflog  // git reflog记录了每一次命令 用该命令可以看到需要版本的版本号信息，以便我们退回该版本
+
+//在文件界面可以看到的是工作区 使用git add 提交到的是暂存区  使用git commit -m “。。”提交到的是分支master
+
+git checkout -- readme.txt //丢弃工作区的修改
+git reset HEAD readme.txt  //将已经添加到暂存区的内容退回到工作区，如果想彻底放弃修改，再在工作区中使用 git checkout
+//如果已经添加到了分支，想要退回就使用版本退回
