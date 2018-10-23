@@ -1,0 +1,5 @@
+git add readme.txt  //添加文件  这个命令可以执行多次 即同时添加多个文件
+git commit -m "wrote a readme file" //提交文件到仓库 引号内容为本次修改说明
+//以上两步即可将文件加入仓库
+git status   //显示仓库当前状态 如哪些文件被修改过，哪些文件还没有准备提交。
+git diff readme.txt  //显示该文件修改的地方 
