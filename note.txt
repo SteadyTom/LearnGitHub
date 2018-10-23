@@ -17,3 +17,6 @@ git reflog  // git reflog记录了每一次命令 用该命令可以看到需要
 git checkout -- readme.txt //丢弃工作区的修改
 git reset HEAD readme.txt  //将已经添加到暂存区的内容退回到工作区，如果想彻底放弃修改，再在工作区中使用 git checkout
 //如果已经添加到了分支，想要退回就使用版本退回
+
+rm test.txt //删除工作区中的文件 当然也可以直接去文件夹里删除文件
+git rm test.txt  //从版本库中删除该文件命令 然后还需要git commit -m “。。 ”
